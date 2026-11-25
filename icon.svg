@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="badge"><circle cx="128" cy="128" r="124"/></clipPath>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a505a"/>
+      <stop offset="1" stop-color="#23262c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="124" fill="#6a3fd1"/>
+  <g clip-path="url(#badge)">
+    <!-- sparks, fanning out from where the disc meets the work -->
+    <g stroke-linecap="round" fill="none">
+      <path d="M50 194 L-6 214" stroke="#ff9f1c" stroke-width="8"/>
+      <path d="M56 200 L4 246" stroke="#ffd23f" stroke-width="9"/>
+      <path d="M64 206 L36 262" stroke="#ff9f1c" stroke-width="8"/>
+      <path d="M74 210 L68 262" stroke="#ffd23f" stroke-width="6"/>
+      <path d="M44 184 L0 186" stroke="#ffd23f" stroke-width="6"/>
+      <path d="M40 222 L24 236" stroke="#fff3b0" stroke-width="5"/>
+      <path d="M26 202 L10 204" stroke="#fff3b0" stroke-width="5"/>
+      <path d="M54 236 L46 252" stroke="#fff3b0" stroke-width="5"/>
+    </g>
+    <g fill="#fff3b0">
+      <circle cx="20" cy="170" r="4"/>
+      <circle cx="30" cy="250" r="4"/>
+      <circle cx="88" cy="244" r="4"/>
+    </g>
+    <!-- the disc: onion rings -->
+    <circle cx="96" cy="140" r="64" fill="#3a1f86"/>
+    <circle cx="96" cy="140" r="56" fill="none" stroke="#fff" stroke-width="9"/>
+    <circle cx="96" cy="140" r="36" fill="none" stroke="#fff" stroke-width="9"/>
+    <circle cx="96" cy="140" r="16" fill="none" stroke="#fff" stroke-width="9"/>
+    <circle cx="96" cy="140" r="4" fill="#fff"/>
+    <!-- spin marks -->
+    <g fill="none" stroke="#c9b6ff" stroke-width="5" stroke-linecap="round">
+      <path d="M38 118 A62 62 0 0 0 34 150" transform="translate(-10 0)"/>
+      <path d="M118 214 A76 76 0 0 1 86 219"/>
+    </g>
+    <!-- guard over the back of the disc -->
+    <path d="M40 98 A72 72 0 0 1 166 112" fill="none" stroke="#9aa1ab" stroke-width="12" stroke-linecap="round"/>
+    <!-- side handle -->
+    <rect x="178" y="52" width="20" height="66" rx="10" fill="#23262c" transform="rotate(12 188 118)"/>
+    <!-- gear head and motor body -->
+    <rect x="128" y="112" width="132" height="54" rx="22" fill="url(#body)"/>
+    <rect x="128" y="112" width="44" height="54" rx="14" fill="#2b2f36"/>
+    <g stroke="#6a3fd1" stroke-width="5" stroke-linecap="round">
+      <path d="M196 126 V152"/>
+      <path d="M210 126 V152"/>
+      <path d="M224 126 V152"/>
+    </g>
+  </g>
+</svg>
